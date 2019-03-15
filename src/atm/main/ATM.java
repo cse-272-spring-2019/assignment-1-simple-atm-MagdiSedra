@@ -28,14 +28,14 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author JanetRadi
+ * @author MagdiSedra
  */
 public class ATM extends Application implements EventHandler<ActionEvent> {
 
     int flag = 0;
     Label cn, am, Show;
     Button btd, btn1, btd2, btn2, btn3, prev, next, BalanceInq;
-    Client c;
+    User c;
     Scene scene2;
     TitledPane tp1, tp2;
     RadioButton rb1, rb2;
@@ -43,7 +43,7 @@ public class ATM extends Application implements EventHandler<ActionEvent> {
     @Override
     public void start(Stage primaryStage) {
         Stage s = primaryStage;
-        c = new Client(0, "1234"); //<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------------------  CARDNUMBER 
+        c = new User(0, "1234"); //<<<<<<<<<<<<<<<<<<<<<<<<<<<-----------------------  CARDNUMBER 
 
         Label l2 = new Label("ATM");
         l2.setFont(new Font(40));
